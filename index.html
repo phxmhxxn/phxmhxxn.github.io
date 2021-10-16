@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Fwar</title>
+    <title>Unity WebGL Player | Client</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1200 height=675></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Fwar</div>
+        <div id="unity-build-title">Client</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/129978d678383f70d301118a7945cf44.js";
       var config = {
-        dataUrl: buildUrl + "/e44944abca23d0c0fed85c162b8f04db.data",
-        frameworkUrl: buildUrl + "/403ef1535c59e4c0693c87b1cc2739a9.js",
-        codeUrl: buildUrl + "/8365d24b41f154e4a3deefcfede4997b.wasm",
+        dataUrl: buildUrl + "/6b2f1a97ac7b17808e1120b72884ab2f.data",
+        frameworkUrl: buildUrl + "/ceb40373160100ef2bbdda4624c6ac63.js",
+        codeUrl: buildUrl + "/2ecc68ef3763bf1718a705506333f725.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Fusion",
-        productName: "Fwar",
-        productVersion: "1.1",
+        companyName: "DefaultCompany",
+        productName: "Client",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "1200px";
-        canvas.style.height = "675px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
